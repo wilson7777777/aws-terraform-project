@@ -1,0 +1,17 @@
+o
+# Ignore Terraform's internal plugin folder
+.terraform/
+
+# Ignore the lock file (prevents version conflicts)
+.terraform.lock.hcl
+
+# Ignore local state files (since we are using the S3 backend)
+*.tfstate
+*.tfstate.*
+
+# Ignore crash logs
+crash.log
+
+# Ignore sensitive variable files
+*.tfvars
+*.tfvars.json
